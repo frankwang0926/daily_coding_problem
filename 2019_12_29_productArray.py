@@ -46,6 +46,7 @@ def productArray2(arr):
     return new_arr
 
 # without division
+# O(N) & O(N)
 def prefix_products(arr):
     new_arr = []
     for num in arr:
@@ -79,7 +80,7 @@ def productArray3(arr):
         else:
             new_arr.append(prefix[i-1]*suffix[i+1])
     return new_arr
-    
+   
 print(productArray1([1,2,3,4,5]))
 print(productArray2([1,2,3,4,5]))
 print(productArray3([1,2,3,4,5]))              
