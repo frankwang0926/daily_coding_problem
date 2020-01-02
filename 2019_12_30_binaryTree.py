@@ -12,6 +12,8 @@ class Node:
         self.left = left
         self.right = right
 
+# O(N) time and space
+
 def serialize(root):
     if root == None:
         return "Null"

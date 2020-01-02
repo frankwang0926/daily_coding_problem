@@ -21,9 +21,10 @@ def addUptok(list, k):
 def addUptok_set(list, k):
     seen = set()
     for num in list:
+        # lookup of set: O(1)
         if k - num in seen:
             return True
-        seen.add(num) # lookup of set: O(1)
+        seen.add(num) 
     return False
 
 # Yet another solution involves sorting the list. 
